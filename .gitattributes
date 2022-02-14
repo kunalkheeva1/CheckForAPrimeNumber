@@ -1,2 +1,24 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import java.util.Scanner;
+
+public class MyPrimeNumbers {
+    public static void main(String[] args) {
+        System.out.println("YOUR ENTRY: ");
+
+        Scanner scanner = new Scanner(System.in);
+        double entry = scanner.nextDouble();
+        boolean prime = true;
+        for (int i = 2; i <entry; i++ )
+        {
+            if(entry%i ==0){
+
+                prime = false;
+                break;
+            }
+        }
+        System.out.println(prime);
+
+
+
+
+    }
+}
